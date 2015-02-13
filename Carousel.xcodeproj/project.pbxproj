@@ -15,6 +15,9 @@
 		CDC3740F1A8AA29B00DFE3AF /* CarouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3740E1A8AA29B00DFE3AF /* CarouselTests.swift */; };
 		CDC374191A8AB32700DFE3AF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC374181A8AB32700DFE3AF /* IntroViewController.swift */; };
 		CDC3741B1A8AB3EE00DFE3AF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3741A1A8AB3EE00DFE3AF /* Common.swift */; };
+		CDC3741D1A8AD8D300DFE3AF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3741C1A8AD8D300DFE3AF /* SignInViewController.swift */; };
+		CDC3741F1A8C622100DFE3AF /* scrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3741E1A8C622100DFE3AF /* scrollViewController.swift */; };
+		CDC374211A8DF10100DFE3AF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC374201A8DF10100DFE3AF /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		CDC3740E1A8AA29B00DFE3AF /* CarouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTests.swift; sourceTree = "<group>"; };
 		CDC374181A8AB32700DFE3AF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		CDC3741A1A8AB3EE00DFE3AF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		CDC3741C1A8AD8D300DFE3AF /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CDC3741E1A8C622100DFE3AF /* scrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollViewController.swift; sourceTree = "<group>"; };
+		CDC374201A8DF10100DFE3AF /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,9 @@
 				CDC374011A8AA29B00DFE3AF /* LaunchScreen.xib */,
 				CDC373F61A8AA29B00DFE3AF /* Supporting Files */,
 				CDC374181A8AB32700DFE3AF /* IntroViewController.swift */,
+				CDC3741C1A8AD8D300DFE3AF /* SignInViewController.swift */,
+				CDC3741E1A8C622100DFE3AF /* scrollViewController.swift */,
+				CDC374201A8DF10100DFE3AF /* FeedViewController.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -221,7 +230,10 @@
 				CDC3741B1A8AB3EE00DFE3AF /* Common.swift in Sources */,
 				CDC374191A8AB32700DFE3AF /* IntroViewController.swift in Sources */,
 				CDC373FB1A8AA29B00DFE3AF /* ViewController.swift in Sources */,
+				CDC3741D1A8AD8D300DFE3AF /* SignInViewController.swift in Sources */,
 				CDC373F91A8AA29B00DFE3AF /* AppDelegate.swift in Sources */,
+				CDC3741F1A8C622100DFE3AF /* scrollViewController.swift in Sources */,
+				CDC374211A8DF10100DFE3AF /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
