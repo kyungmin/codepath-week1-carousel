@@ -19,12 +19,13 @@ class createDropboxViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
 
         createFormGroup.transform = CGAffineTransformMakeScale(0.5, 0.5)
-        
-        // Do any additional setup after loading the view.
+        createFormGroup.alpha = 0.2
+
         delay(0.1, {
             UIView.animateWithDuration(0.3, delay: 0, options: nil, animations: {
                 self.createFormGroup.transform = CGAffineTransformMakeScale(1, 1)
-                }, completion: nil)
+                self.createFormGroup.alpha = 1
+            }, completion: nil)
         })
     }
 

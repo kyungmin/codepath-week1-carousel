@@ -22,7 +22,17 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        loginFormGroup.transform = CGAffineTransformMakeScale(0.5, 0.5)
+        loginFormGroup.alpha = 0.2
         
+        delay(0.1, {
+            UIView.animateWithDuration(0.3, delay: 0, options: nil, animations: {
+                self.loginFormGroup.transform = CGAffineTransformMakeScale(1, 1)
+                self.loginFormGroup.alpha = 1
+                }, completion: nil)
+        })
+
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
@@ -41,14 +51,16 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func signInDidClick(sender: AnyObject) {
-        if (emailField.text == "") {
-            // empty email
-            self.alertView = UIAlertView(title: "Email required", message: "Please enter your email address", delegate: self, cancelButtonTitle: "OK")
-            self.alertView.show()
-        } else if (passwordField.text == "") {
-            // empty password
-            self.alertView = UIAlertView(title: "Password required", message: "Please enter your password", delegate: self, cancelButtonTitle: "OK")
-            self.alertView.show()
+        if (emailField.text == "" || emailField.text == "") {
+            if (emailField.text == "") {
+                // empty email
+                self.alertView = UIAlertView(title: "Email required", message: "Please enter your email address", delegate: self, cancelButtonTitle: "OK")
+                self.alertView.show()
+            } else if (passwordField.text == "") {
+                // empty password
+                self.alertView = UIAlertView(title: "Password required", message: "Please enter your password", delegate: self, cancelButtonTitle: "OK")
+                self.alertView.show()
+            }
         } else {
             alertView = UIAlertView(title: "Signing in...", message: nil, delegate: self, cancelButtonTitle: nil)
             alertView.show()
