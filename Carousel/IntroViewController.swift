@@ -21,16 +21,30 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var tile6: UIImageView!
 
     @IBOutlet weak var label: UILabel!
+    var yOffsets : [Float] = [-285, -240, -415, -408, -480, -500]
     var xOffsets : [Float] = [-30, 75, -66, 10, -200, -15]
-    var yOffsets : [Float] = [-285, -240, -415, 408, -480, -500]
     var scales : [Float] = [1, 1.65, 1.7, 1.6, 1.65, 1.65]
     var rotations : [Float] = [-10, -10, 10, 10, 10, -10]
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.delegate = self
         scrollView.contentSize = imageView.frame.size
+
+        var offset = Float(scrollView.contentOffset.y)
+        var tiles : [UIImageView] = [tile1, tile2, tile3, tile4, tile5, tile6]
+
+        for index in 0...5 {
+            var tx = convertValue(offset, 0, 568, xOffsets[index], 0)
+            var ty = convertValue(offset, 0, 568, yOffsets[index], 0)
+            var scale = convertValue(offset, 0, 568, scales[index], 1)
+            var rotation = convertValue(offset, 0, 568, rotations[index], 0)
+            
+            tiles[index].transform = CGAffineTransformMakeRotation(CGFloat(Double(rotation) * M_PI / 180))
+            tiles[index].transform = CGAffineTransformTranslate(tiles[index].transform, CGFloat(tx), CGFloat(ty))
+            tiles[index].transform = CGAffineTransformScale(tiles[index].transform, CGFloat(scale), CGFloat(scale))
+        }
     }
 
     func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -44,13 +58,11 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
             var rotation = convertValue(offset, 0, 568, rotations[index], 0)
 
             UIView.animateWithDuration(0.4, animations: {
-                tiles[index].transform = CGAffineTransformMakeTranslation(CGFloat(tx), CGFloat(ty))
+                tiles[index].transform = CGAffineTransformMakeRotation(CGFloat(Double(rotation) * M_PI / 180))
+                tiles[index].transform = CGAffineTransformTranslate(tiles[index].transform, CGFloat(tx), CGFloat(ty))
                 tiles[index].transform = CGAffineTransformScale(tiles[index].transform, CGFloat(scale), CGFloat(scale))
-                tiles[index].transform = CGAffineTransformRotate(tiles[index].transform, CGFloat(Double(rotation) * M_PI / 180))
             })
         }
-        
-        
     }
     
     func scrollViewWillBeginDragging(scrollView: UIScrollView!) {

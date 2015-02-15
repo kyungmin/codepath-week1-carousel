@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD268F961A901BEA00D3865C /* createDropboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD268F951A901BEA00D3865C /* createDropboxViewController.swift */; };
 		CDC373F91A8AA29B00DFE3AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC373F81A8AA29B00DFE3AF /* AppDelegate.swift */; };
 		CDC373FB1A8AA29B00DFE3AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC373FA1A8AA29B00DFE3AF /* ViewController.swift */; };
 		CDC373FE1A8AA29B00DFE3AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC373FC1A8AA29B00DFE3AF /* Main.storyboard */; };
@@ -18,6 +19,9 @@
 		CDC3741D1A8AD8D300DFE3AF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3741C1A8AD8D300DFE3AF /* SignInViewController.swift */; };
 		CDC3741F1A8C622100DFE3AF /* scrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC3741E1A8C622100DFE3AF /* scrollViewController.swift */; };
 		CDC374211A8DF10100DFE3AF /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC374201A8DF10100DFE3AF /* FeedViewController.swift */; };
+		CDC374231A900AA500DFE3AF /* conversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC374221A900AA500DFE3AF /* conversationsViewController.swift */; };
+		CDC374251A900BF900DFE3AF /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC374241A900BF900DFE3AF /* settingsViewController.swift */; };
+		CDC374271A90163F00DFE3AF /* getStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC374261A90163F00DFE3AF /* getStartedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD268F951A901BEA00D3865C /* createDropboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = createDropboxViewController.swift; sourceTree = "<group>"; };
 		CDC373F31A8AA29B00DFE3AF /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC373F71A8AA29B00DFE3AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC373F81A8AA29B00DFE3AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +51,9 @@
 		CDC3741C1A8AD8D300DFE3AF /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CDC3741E1A8C622100DFE3AF /* scrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = scrollViewController.swift; sourceTree = "<group>"; };
 		CDC374201A8DF10100DFE3AF /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		CDC374221A900AA500DFE3AF /* conversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversationsViewController.swift; sourceTree = "<group>"; };
+		CDC374241A900BF900DFE3AF /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
+		CDC374261A90163F00DFE3AF /* getStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getStartedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 				CDC3741C1A8AD8D300DFE3AF /* SignInViewController.swift */,
 				CDC3741E1A8C622100DFE3AF /* scrollViewController.swift */,
 				CDC374201A8DF10100DFE3AF /* FeedViewController.swift */,
+				CDC374221A900AA500DFE3AF /* conversationsViewController.swift */,
+				CDC374241A900BF900DFE3AF /* settingsViewController.swift */,
+				CDC374261A90163F00DFE3AF /* getStartedViewController.swift */,
+				CD268F951A901BEA00D3865C /* createDropboxViewController.swift */,
 			);
 			path = Carousel;
 			sourceTree = "<group>";
@@ -228,12 +240,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC3741B1A8AB3EE00DFE3AF /* Common.swift in Sources */,
+				CDC374271A90163F00DFE3AF /* getStartedViewController.swift in Sources */,
 				CDC374191A8AB32700DFE3AF /* IntroViewController.swift in Sources */,
+				CDC374251A900BF900DFE3AF /* settingsViewController.swift in Sources */,
 				CDC373FB1A8AA29B00DFE3AF /* ViewController.swift in Sources */,
+				CDC374231A900AA500DFE3AF /* conversationsViewController.swift in Sources */,
 				CDC3741D1A8AD8D300DFE3AF /* SignInViewController.swift in Sources */,
 				CDC373F91A8AA29B00DFE3AF /* AppDelegate.swift in Sources */,
 				CDC3741F1A8C622100DFE3AF /* scrollViewController.swift in Sources */,
 				CDC374211A8DF10100DFE3AF /* FeedViewController.swift in Sources */,
+				CD268F961A901BEA00D3865C /* createDropboxViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +443,7 @@
 				CDC374141A8AA29B00DFE3AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDC374151A8AA29B00DFE3AF /* Build configuration list for PBXNativeTarget "CarouselTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +452,7 @@
 				CDC374171A8AA29B00DFE3AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

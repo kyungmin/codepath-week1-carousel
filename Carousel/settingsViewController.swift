@@ -1,22 +1,28 @@
 //
-//  FeedViewController.swift
+//  settingsViewController.swift
 //  Carousel
 //
-//  Created by Kyungmin Kim on 2/13/15.
+//  Created by Kyungmin Kim on 2/14/15.
 //  Copyright (c) 2015 Kyungmin Kim. All rights reserved.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController, UIScrollViewDelegate {
+class settingsViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize = imageView.frame.size
+
         scrollView.delegate = self
+        // Do any additional setup after loading the view.
+    }
+
+    @IBAction func didPressBackButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
